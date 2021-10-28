@@ -1,0 +1,101 @@
+.news
+    width: 100%
+
+.news-rows
+    background-color: #222
+    display: flex
+    flex-direction: row
+
+.news-box 
+    display: flex
+    flex-direction: column
+    color: #fff
+
+.news-note ul li 
+    display: inline-block
+
+.news-note ul li ::after 
+    content: ""
+    height: 13px
+    width: 1px
+    background: #898989
+    display: inline-block
+    margin: 0 13px 0 13px
+
+.news-box h2
+    font-size: 24px
+    text-transform: uppercase
+    padding: 15px 0
+
+.news-box p 
+    line-height: 1.5
+    text-align: left
+    padding: 15px 0
+
+.news-note
+    padding: 50px 10% 0 20%
+
+.news-box-img img
+    max-width: 791.5px
+    height: auto
+    vertical-align: top
+
+.reverse
+    flex-direction: row-reverse
+    background-color: #fff
+
+.reverse p, .reverse h2, .reverse ul 
+    color:#222
+
+.reverse .news-note
+    padding: 80px 20% 30px 10%
+
+// Apaptivity
+
+@media (max-width: 1200px)
+    .news-note, 
+    .reverse .news-note
+        padding: 10px 20% 30px 10%
+
+    .news-date__item
+        font-size: 10px
+
+    .news-box
+        width: 50%
+
+    .news-box-img img
+        width: 100%
+
+    .news-note h2
+        font-size: 16px
+        font-weight: 600
+        padding: 15px 0
+
+    .news-box p 
+        font-size: 14px
+        padding: 5px 0
+
+@media (max-width: 1000px)
+    .news-rows
+        flex-direction: column
+
+    .news-box
+        width: 100%
+
+    .news-box-img img
+        max-width: 100%
+
+    .news-note, 
+    .reverse .news-note
+        padding: 40px 20% 30px 10%
+
+    .news-note h2
+        font-size: 24px
+
+    .news-date__item
+        font-size: 14px
+
+    .news-box p 
+        font-size: 16px
+
+

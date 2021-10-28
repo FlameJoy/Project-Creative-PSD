@@ -1,0 +1,61 @@
+.blog
+    background-color: #fff
+    padding: 35px 0 100px 0
+
+.blog-title 
+    color: #222
+    text-align: center
+
+.blog-title h2 
+    font-size: 32px
+    font-weight: 500
+    text-transform: uppercase
+    padding: 150px 0 40px 0
+
+.blog-subtitle 
+    font-size: 22px
+    padding: 40px 0
+
+.blog-row 
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+
+.blog-box
+    justify-self: center
+
+.blog-box-img img 
+    max-width: 250px
+    max-height: 250px
+
+.blog-box h2 
+    font-size: 17px
+    font-weight: 500
+    color: #2e85aa
+    text-align: center
+    text-transform: uppercase
+    padding: 15px 0 
+
+.blog-box p 
+    max-width: 250px
+    text-align: center
+    padding: 15px 0
+    line-height: 1.5
+    font-size: 14px
+
+// Adaptivity
+@media (max-width: 1100px)
+    .blog-title h2
+        padding: 60px 0 20px 0
+    
+    .blog-subtitle 
+        font-size: 22px
+        padding: 30px 0
+
+    .blog-row 
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+
+@media (max-width: 1100px)
+    .blog-row 
+        grid-template-columns: repeat(1, 1fr)

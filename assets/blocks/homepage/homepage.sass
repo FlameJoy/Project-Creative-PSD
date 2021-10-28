@@ -1,0 +1,121 @@
+.homepage-back
+  background: url(../images/dest/creative-background-header.png) center/cover no-repeat fixed
+  height: 100%
+
+.header
+  border-bottom: 1px solid #7b7b7b
+  height: 20%
+
+.homepage-nav
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.logo 
+  margin: 24px 0 12px 0
+
+.homepage-menu__item
+  display: inline-block
+  margin: 0 15px
+  &::after
+    display: block
+    content: ''
+    width: 100%
+    border-bottom: 5px solid #11749e
+    margin-top: 2px
+    visibility: hidden
+  &:hover::after
+    visibility: visible
+
+.homepage__link
+  color: #fff
+  font-size: 20px
+  padding: 40px 0
+
+.homepage-wrap 
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  height: 80%
+  text-transform: uppercase
+  padding: 13% 20%
+  text-align: center
+  gap: 50px 0
+
+.homepage__title  
+  position: relative
+  font-size: 152.5px
+  color: #fff
+  font-weight: 600
+
+.homepage__subtitle 
+  font-size: 25px
+  font-weight: 500
+  letter-spacing: 20px
+  color: #11749e
+  animation: moveFromRight 1s ease-in-out
+
+.homepage-menu-mobile
+  display: none
+  font-size: 40px
+  color: #fff
+
+.homepage-menu-mobile__list
+  display: none
+  position: absolute
+  background-color: #0000009f
+  margin-right: 27px
+  right: 0px
+  z-index: 5
+
+.homepage-menu-mobile__item 
+  font-size: 18px
+  padding: 10px 5px
+  border-bottom: 2px solid #11749e
+  &:hover
+    background-color: #00000027
+.homepage-menu-mobile__link
+  font-size: 18px
+  color: #fff
+
+// Adaptivity
+@media (max-width:1000px)
+  .homepage__title  
+    font-size: 80px
+
+  .homepage-menu__item
+    margin: 0 5px
+    
+@media (max-width:768px)
+  .homepage__title  
+    font-size: 50px
+
+  .homepage__subtitle
+    font-size: 18px
+    letter-spacing: 10px
+
+  .homepage__link
+    font-size: 16px
+    padding: 20px 0
+
+  .logo-img
+    width: 49px
+    height: 45px
+
+@media (max-width:600px)
+  .homepage-menu
+    display: none
+
+  .homepage-menu-mobile
+    display: block
+    &:hover
+      .homepage-menu-mobile__list
+        display: block
+
+  .homepage__title  
+    font-size: 36px
+
+  .homepage__subtitle
+    font-size: 16px
+    letter-spacing: 5px

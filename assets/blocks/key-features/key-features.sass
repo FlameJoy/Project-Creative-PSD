@@ -1,0 +1,61 @@
+.key-features 
+    background: url(../images/dest/key-feature-back.png) center/cover no-repeat fixed
+
+.key-features-container 
+    padding: 100px 0
+    display: flex
+    flex-direction: row
+
+.key-features-notes-title h2 
+    color: #fff
+    font-size: 28px
+    font-weight: 500
+    text-transform: uppercase
+    padding: 150px 0 40px 0
+
+.key-features-notes-title p, .key-features-pros
+    color: #fff
+    max-width: 500px
+    line-height: 1.5
+    font-size: 15px
+    text-align: left
+    font-weight: 400
+    line-height: 1.8
+
+.key-features-pros 
+    margin-top: 80px
+
+.key-features-pros li
+    background-color: #11749e
+    font-size: 16px
+    font-weight: 500
+    text-transform: uppercase
+    padding: 5px 20px
+    margin: 20px 0
+
+.key-features-pros ul :nth-child(1) 
+    max-width: 370px
+    animation-delay: 0.4s
+
+.key-features-pros ul :nth-child(2) 
+    max-width: 400px
+    animation-delay: 0.5s
+
+.key-features-pros ul :nth-child(3)
+    max-width: 430px
+    animation-delay: 0.6s
+
+.key-features-img 
+    margin-left: 190px
+
+// Adaptivity
+@media (max-width: 1000px)
+    .key-features-img
+        display: none
+
+    .key-features-container 
+        justify-content: center
+        padding: 30px 0
+    
+    .key-features-notes-title h2 
+        padding: 20px 0 40px 0

@@ -1,0 +1,23 @@
+section.homepage-back
+  header.header 
+    .container 
+      nav.homepage-nav
+        .logo 
+          img.logo-img(src="/assets/images/dest/logo.png" alt="logo")
+        .homepage-menu
+          ul.homepage-menu__list
+            each name in ['Home', 'Pages', 'Features', 'Extenctions', 'Tutorials', 'Contact us']
+              li.homepage-menu__item 
+                a.homepage__link(href="#")=name
+        .homepage-menu-mobile 
+          span &#9776;
+          ul.homepage-menu-mobile__list
+            each name in ['Home', 'Pages', 'Features', 'Extenctions', 'Tutorials', 'Contact us']
+              li.homepage-menu-mobile__item 
+                a.homepage-menu-mobile__link(href="#")=name
+        //- .homepage-social
+  .homepage-wrap 
+    h1.homepage__title.wow.animate__fadeInLeft Creatives
+    .homepage__subtitle.wow.animate__fadeInRight Power by PSDfreebies.com
+
+            
